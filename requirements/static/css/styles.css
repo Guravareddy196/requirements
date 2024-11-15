@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-section">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="nsav-section">
+            <a href="CropRecommendation.html">Crop</a>
+        </div>
+        <div class="nav-section">
+            <a href="FertilizerRecommendation.html">Fertilizer</a>
+        </div>
+    </nav>
+
+    <div class="bg-image">
+        <div class="content">
+            <h1 class="tm-heading">Welcome to FARMGUARDIAN</h1>
+            <div class="button-section">
+                <div class="button-box">
+                    <div class="icon-box">
+                        <img src="static/img/images/icon1.png" alt="Icon 1">
+                    </div>
+                    <a href="CropRecommendation.html" class="tm-button">Crop<br>Recommendation</a>
+                </div>
+                <div class="button-box">
+                    <div class="icon-box">
+                        <img src="static/img/images/icon2.png" alt="Icon 2">
+                    </div>
+                    <a href="FertilizerRecommendation.html" class="tm-button">Fertilizer<br>Recommendation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>

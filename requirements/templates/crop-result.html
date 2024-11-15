@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Recommendation</title>
+    <style>
+        /* Reset and basic styles */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        /* Navigation styles */
+        ul {
+            display: flex;
+            background-color: #182849;
+            padding: 3.5px 0; /* Decreased padding to reduce height */
+            list-style: none;
+            margin: 0;
+        }
+        li {
+            flex: 1;
+            text-align: center;
+            border-right: 2px solid #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 3.5px 0; /* Decreased padding to reduce height */
+        }
+        li a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            padding: 3.5px 0; /* Decreased padding to reduce height */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        li:last-child {
+            border-right: none;
+        }
+        /* Main Content */
+        .main-content {
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .main-content h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .highlight-text {
+            color: #FF6347; /* Light Coral color */
+            font-weight: bold; /* Added font weight */
+            font-size: 1.5em; /* Adjusted font size */
+            font-family: 'Arial', sans-serif; /* Different font */
+            text-shadow: 2px 2px 4px #000000; /* Text shadow for emphasis */
+        }
+        img {
+            width: 780px;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="CropRecommendation.html" class="active">Crop</a></li>
+    <li><a href="FertilizerRecommendation.html">Fertilizer</a></li>
+    <li><a href="PesticideRecommendation.html">Pesticide</a></li>
+</ul>
+
+<!-- Main Content -->
+<div class="main-content">
+    <h1>
+        You are recommended to cultivate <span class="highlight-text">{{ prediction }}</span> in your fields.
+        <br><br>
+        <img src="{{ url_for('static', filename=pred) }}" alt="{{ prediction }}">
+    </h1>
+</div>
+
+</body>
+</html>

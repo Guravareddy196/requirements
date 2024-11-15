@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fertilizer Recommendation</title>
+    <style>
+        /* Reset and basic styles */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #222;
+            background-color: #f4f4f4;
+        }
+        /* Navigation styles */
+        ul {
+            display: flex;
+            background-color: #182849; /* Dark blue */
+            padding: 5px 0;
+            list-style: none;
+            margin: 0;
+        }
+        li {
+            flex: 1;
+            text-align: center;
+            border-right: 2px solid #fff;
+            padding: 5px 0;
+        }
+        li a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            padding: 5px 0;
+        }
+        li:last-child {
+            border-right: none;
+        }
+        /* Main Content */
+        div {
+            padding: 5% 15%;
+        }
+        p {
+            font-size: 18px;
+            font-family: 'Arial', sans-serif;
+        }
+        .topic1 {
+            color: #0074D9; /* Blue for Topic 1 */
+        }
+        .topic2 {
+            color: #FF851B; /* Orange for Topic 2 */
+        }
+        .topic3 {
+            color: #3D9970; /* Green for Topic 3 */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="CropRecommendation.html">Crop</a></li>
+    <li><a href="FertilizerRecommendation.html" class="active">Fertilizer</a></li>
+    <li><a href="PesticideRecommendation.html">Pesticide</a></li>
+</ul>
+
+<!-- Main Content -->
+<div>
+    <p class="topic1">
+        Difference between desired value of N and your farm's N value is {{ diff_n }}
+    </p>
+    <p class="topic2">
+        {{ recommendation1 }}
+    </p>
+    <p class="topic1">
+        Difference between desired value of P and your farm's P value is {{ diff_p }}
+    </p>
+    <p class="topic2">
+        {{ recommendation2 }}
+    </p>
+    <p class="topic1">
+        Difference between desired value of K and your farm's K value is {{ diff_k }}
+    </p>
+    <p class="topic2">
+        {{ recommendation3 }}
+    </p>
+</div>
+
+</body>
+</html>
